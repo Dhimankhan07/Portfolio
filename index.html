@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Data Science Student & ML Enthusiast</title>
+    <meta name="description" content="Personal Portfolio of a Data Science Student featuring Machine Learning projects, interactive data visualizations, and predictive modeling expertise.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for Interactive Data Science Graphics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Outer Decorative Corner Accents (Reference Design Match) -->
+    <div class="corner-accent top-right-accent"></div>
+    <div class="corner-accent bottom-left-accent"></div>
+
+    <div class="main-wrapper">
+        <!-- Navigation Bar -->
+        <header class="navbar">
+            <div class="logo">
+                <a href="#home">Dhiman <span>Khan</span></a>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About me</a>
+                <a href="#education">Education</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <span class="hero-subtag">Welcome To My Portfolio</span>
+                    <h1 class="hero-title"><span id="heroName">Dhiman</span> <span class="highlight" id="heroLastName">Khan</span></h1>
+                    <p class="hero-bio">
+                        - I'm a passionate <span class="typing-text" id="typingText">Data Science Student</span> from Brainware University.
+                    </p>
+
+                    <!-- Social Icons Row (Reference Design Match) -->
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-circle">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/khandhiman07" target="_blank" aria-label="Twitter" class="social-circle">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dhiman-khan-a33632400" target="_blank" aria-label="LinkedIn" class="social-circle">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/khan_dhiman/?__pwa=1" target="_blank" aria-label="Instagram" class="social-circle">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/Dhimankhan07" target="_blank" aria-label="GitHub" class="social-circle">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#portfolio" class="btn btn-primary"><i class="fa-solid fa-chart-line"></i> View Projects</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image with Paint Splash Background -->
+                <div class="hero-image-wrapper">
+                    <!-- SVG Artistic Yellow Paint Splash Behind Image -->
+                    <div class="yellow-splash-bg">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M410.5,315.5Q387,381,324.5,417.5Q262,454,196.5,422.5Q131,391,85,335.5Q39,280,72.5,213.5Q106,147,163.5,101Q221,55,291,72.5Q361,90,397.5,155Q434,220,410.5,315.5Z" fill="#ffbe00"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Cutout Photo Container -->
+                    <div class="student-photo-container">
+                        <img src="assets/Professional Photo.jpeg" alt="Data Science Student Portrait" id="userHeroPhoto" class="student-photo" onerror="this.src='assets/Professional Photo.jpeg'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats Banner -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="50">50+</h3>
+                        <p>Datasets Analyzed</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="120">120+</h3>
+                        <p>ML Models Trained</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="1500">1.5k+</h3>
+                        <p>GitHub Commits</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="stat-info">
+                        <h3>3.9/4.0</h3>
+                        <p>Academic GPA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-container">
+                <div class="about-text">
+                    <h3>Produce Everyday New...</h3>
+                    <p>
+                        Hello! I am a 3rd year Data Science student passionate about machine learning, data science, and artificial intelligence. Currently i am pursuing a degree called B.tech CSE (Specialization in DataScience).My main aim is to become a data scientist and solve real world problems using data science.My main aim is to become a Data Scientist.
+                    </p>
+                    <p>
+                        Whether training deep convolutional neural networks or tuning gradient boosting classifiers, I thrive on turning complex datasets into actionable intelligence.
+                    </p>
+
+                    <div class="skills-wrapper">
+                        <h4>Tech Stack & Tools</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fa-solid fa-cube"></i> PyTorch</span>
+                            <span class="skill-badge"><i class="fa-solid fa-gear"></i> Scikit-Learn</span>
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL (PostgreSQL)</span>
+                            <span class="skill-badge"><i class="fa-solid fa-table"></i> Pandas / NumPy</span>
+                            <span class="skill-badge"><i class="fa-solid fa-chart-pie"></i> Tableau</span>
+                            <span class="skill-badge"><i class="fa-brands fa-r-project"></i> R Studio</span>
+                            <span class="skill-badge"><i class="fa-solid fa-diagram-project"></i> TensorFlow</span>
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-chart-line"></i> Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="section-header">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">Education & <span>Qualifications</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>B.S. in Data Science & Applied Statistics</h3>
+                        <p class="institution">University of Science and Technology</p>
+                        <p class="timeline-desc">
+                            Specializing in Machine Learning, Statistical Modeling, and Big Data Systems. Honors Student with Dean's List recognition for consecutive semesters.
+                        </p>
+                        <div class="course-list">
+                            <span>Key Coursework:</span> Deep Learning, Probability & Stochastic Processes, Big Data Analytics, Regression Analysis, Data Structures & Algorithms.
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3>Machine Learning Specialization & Certifications</h3>
+                        <p class="institution">Coursera / DeepLearning.AI</p>
+                        <p class="timeline-desc">
+                            Completed advanced certifications covering Neural Networks, Hyperparameter Tuning, Natural Language Processing, and MLOps deployment workflows.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Data Engineering with Python Professional Certificate</h3>
+                        <p class="institution">DataCamp</p>
+                        <p class="timeline-desc">
+                            Mastered ETL pipeline construction, SQL database normalization, Docker containerization, and automated data orchestration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section achievements-section">
+            <div class="section-header">
+                <span class="section-tag">Highlights</span>
+                <h2 class="section-title">My <span>Achievements</span></h2>
+                <div class="section-line"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="section-header">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">My <span>Services</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    <h3>Predictive Machine Learning</h3>
+                    <p>Designing, tuning, and validating supervised and unsupervised algorithms (XGBoost, Random Forests, SVMs) for classification, regression, and anomaly detection.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-diagram"></i></div>
+                    <h3>Exploratory Data Analysis & Viz</h3>
+                    <p>Uncovering deep patterns in complex tabular and time-series data with dynamic interactive visualizations using Plotly, Seaborn, and Chart.js.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Deep Learning & Computer Vision</h3>
+                    <p>Building Convolutional Neural Networks (CNNs) and Transformers for image classification, object detection, and sequential data processing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>NLP & LLM Applications</h3>
+                    <p>Leveraging Large Language Models, sentiment analysis, topic modeling, and Retrieval-Augmented Generation (RAG) pipelines using HuggingFace & LangChain.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>Interactive Dashboarding</h3>
+                    <p>Creating intuitive executive dashboards with Streamlit, Dash, and Tableau that connect directly to live SQL databases and API endpoints.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Data Wrangling & Pipeline ETL</h3>
+                    <p>Cleaning messy datasets, engineering domain-specific features, and automating robust data ingestion pipelines in Python and SQL.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section with Interactive Charts -->
+        <section id="portfolio" class="section portfolio-section">
+            <div class="section-header">
+                <span class="section-tag">Recent Work</span>
+                <h2 class="section-title">Data Science <span>Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="viz">Data Visualization</button>
+                <button class="filter-btn" data-filter="nlp">NLP & LLMs</button>
+                <button class="filter-btn" data-filter="dl">Deep Learning</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-chart-container">
+                        <canvas id="chartChurn"></canvas>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Machine Learning</span>
+                        <h3>Customer Churn Predictor</h3>
+                        <p>Predictive XGBoost model achieving 94.2% ROC-AUC score on telecommunication customer retention dataset.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>XGBoost</span><span>SHAP</span><span>Scikit-Learn</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-sm open-modal" data-modal="modalChurn"><i class="fa-solid fa-circle-info"></i> Details</button>
+                            <a href="https://github.com" target="_blank" class="btn-icon" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="viz">
+                    <div class="project-chart-container">
+                        <canvas id="chartFinancial"></canvas>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Data Visualization</span>
+                        <h3>Global Market Trends EDA Dashboard</h3>
+                        <p>Interactive EDA analyzing 5+ years of stock and crypto indices with automated ARIMA forecasting.</p>
+                        <div class="project-tech">
+                            <span>Plotly</span><span>Pandas</span><span>Streamlit</span><span>ARIMA</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-sm open-modal" data-modal="modalFinancial"><i class="fa-solid fa-circle-info"></i> Details</button>
+                            <a href="https://github.com" target="_blank" class="btn-icon" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="nlp">
+                    <div class="project-chart-container">
+                        <canvas id="chartSentiment"></canvas>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">NLP & LLMs</span>
+                        <h3>Financial News Sentiment Classifier</h3>
+                        <p>Fine-tuned BERT transformer categorizing financial headlines into sentiment signals with 91.8% F1-score.</p>
+                        <div class="project-tech">
+                            <span>HuggingFace</span><span>PyTorch</span><span>BERT</span><span>FastAPI</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-sm open-modal" data-modal="modalSentiment"><i class="fa-solid fa-circle-info"></i> Details</button>
+                            <a href="https://github.com" target="_blank" class="btn-icon" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="dl">
+                    <div class="project-chart-container">
+                        <canvas id="chartVision"></canvas>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Deep Learning</span>
+                        <h3>Medical MRI Image Segmentation</h3>
+                        <p>Deep U-Net convolutional architecture identifying brain tumor boundaries with high Dice Similarity Coefficient.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span><span>OpenCV</span><span>U-Net</span><span>CUDA</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-sm open-modal" data-modal="modalVision"><i class="fa-solid fa-circle-info"></i> Details</button>
+                            <a href="https://github.com" target="_blank" class="btn-icon" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Reference Match) -->
+        <section id="testimonials" class="section testimonials-section">
+            <div class="section-header">
+                <span class="section-tag">Feedback & Recommendations</span>
+                <h2 class="section-title">What Mentors <span>Say</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "Alex showed extraordinary analytical rigor during his research project. His ability to build robust machine learning pipelines and articulate findings clearly makes him a top data scientist."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                        <div>
+                            <h4>Dr. Marcus Vance</h4>
+                            <span>Professor of Computer Science & Statistics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "During his data science internship, Alex single-handedly improved our churn prediction model accuracy by 8%. He communicates data insights effortlessly to both tech leads and business stakeholders."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fa-solid fa-user-gear"></i></div>
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span>Lead Data Scientist, Analytics Corp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Contact <span>Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Have a Project or Internship Opportunity?</h3>
+                    <p>I'm currently open for full-time Data Science roles, machine learning research projects, and freelance data analytics engagements.</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Me</h4>
+                                <p>alex.morgan.ds@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>New York, NY, USA</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+                            <div>
+                                <h4>Resume</h4>
+                                <a href="#" class="download-link">Download Data Science Resume (PDF)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject / Project Scope" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Alex Morgan. Built with <i class="fa-solid fa-heart" style="color: #ffbe00;"></i> for Data Science.</p>
+        </footer>
+    </div>
+
+    <!-- Interactive Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
